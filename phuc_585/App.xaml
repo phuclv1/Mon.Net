@@ -1,0 +1,26 @@
+﻿<Application x:Class="phuc_585.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:phuc_585"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="tx" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Time New Roman"/>
+            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <ControlTemplate x:Key="bt" TargetType="Button">
+            <Grid>
+                <Border Background="Cyan" CornerRadius="50"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+        <Style x:Key="dt" TargetType="DataGridColumnHeader">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="dlt" TargetType="TextBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Application.Resources>
+</Application>
